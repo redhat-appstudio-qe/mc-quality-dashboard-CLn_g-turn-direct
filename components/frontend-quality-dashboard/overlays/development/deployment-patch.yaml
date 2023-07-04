@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-onro-tenant/mc-quality-dashboard/frontend-quality-dashboard@sha256:46f13bf227429623a172972c711c738a7a8942428260a1570003ecf83ee2049c
+        name: container-image
+        resources: {}
+status: {}
